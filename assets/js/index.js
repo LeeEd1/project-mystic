@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const frontImg = document.createElement("img");
         frontImg.src = `assets/images/${shuffledImages[i]}`;
         frontDiv.appendChild(frontImg);
-        console.log(frontImg);
 
         const backDiv = document.createElement("div");
         backDiv.className = "back";
@@ -28,12 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const backImg = document.createElement("img");
         backImg.src = `assets/images/hplogo.jpg`;
         backDiv.appendChild(backImg);
-
-        console.log(backImg);
     }
 });
 
-//shuffle card **credit fisher-yates method**
+//shuffle cards **credit fisher-yates method**
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
