@@ -31,14 +31,14 @@
 }
 
 .front img {
-    position: inherit;
+    position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 10%;
 }
 
 .back img {
-    position: inherit;
+    position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 10%;
