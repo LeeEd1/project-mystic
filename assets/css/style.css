@@ -57,3 +57,11 @@
     width: 100%;
     border-radius: 10%;
 }
+
+.social {
+    text-align: center;
+}
+
+.social i {
+    color: black;
+}
