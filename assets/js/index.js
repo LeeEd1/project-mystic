@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cardDiv.appendChild(frontDiv);
 
         const frontImg = document.createElement("img");
-        frontImg.src = `assets/images/${shuffledImages[i]}`;
+        frontImg.src = `assets/images/hplogo.jpg`;
         frontDiv.appendChild(frontImg);
 
         const backDiv = document.createElement("div");
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cardDiv.appendChild(backDiv);
 
         const backImg = document.createElement("img");
-        backImg.src = `assets/images/hplogo.jpg`;
+        backImg.src = `assets/images/${shuffledImages[i]}`;
         backDiv.appendChild(backImg);
     }
 });
