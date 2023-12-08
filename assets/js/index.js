@@ -1,5 +1,6 @@
 const imageList = ["dobby.jpg", "dumbledore.jpg", "harry.jpg", "hermione.jpg", "lucius.jpg", "luna.jpg", "ron.jpg", "Voldemort.jpg"];
 
+//create divs for game board +front+back
 
 document.addEventListener("DOMContentLoaded", function () {
     const gameContainer = document.getElementById("game-container");
@@ -22,6 +23,10 @@ document.addEventListener("DOMContentLoaded", function () {
         backDiv.className = "back";
         cardDiv.appendChild(backDiv);
 
-        console.log(backDiv);
+        const backImg = document.createElement("img");
+        backImg.src = `assets/images/hplogo.jpg`;
+        backDiv.appendChild(backImg);
+
+        console.log(backImg);
     }
 });
