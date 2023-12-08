@@ -1,4 +1,6 @@
 const imageList = ["dobby.jpg", "dumbledore.jpg", "harry.jpg", "hermione.jpg", "lucius.jpg", "luna.jpg", "ron.jpg", "Voldemort.jpg"];
+const shuffledImages = shuffleArray([...imageList, ...imageList]);
+
 
 //create divs for game board +front+back
 
@@ -15,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         cardDiv.appendChild(frontDiv);
 
         const frontImg = document.createElement("img");
-        frontImg.src = `assets/images/${imageList[i]}`;
+        frontImg.src = `assets/images/${shuffledImages[i]}`;
         frontDiv.appendChild(frontImg);
         console.log(frontImg);
 
@@ -30,3 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(backImg);
     }
 });
+
+//shuffle card **credit fisher-yates method**
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    };
+    return array;
+};
+console.log(shuffleArray);
