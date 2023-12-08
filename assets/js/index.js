@@ -5,7 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const cardDiv = document.createElement("div");
         cardDiv.className = "card";
         gameContainer.appendChild(cardDiv);
-        console.log(i);
 
+        const frontDiv = document.createElement("div");
+        frontDiv.className = "front";
+        cardDiv.appendChild(frontDiv);
+
+        const backDiv = document.createElement("div");
+        backDiv.className = "back";
+        cardDiv.appendChild(backDiv);
+
+        console.log(backDiv);
     }
 });
