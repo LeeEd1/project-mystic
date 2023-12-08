@@ -29,3 +29,17 @@
     width: 100%;
     height: 100%;
 }
+
+.front img {
+    position: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
+
+.back img {
+    position: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
