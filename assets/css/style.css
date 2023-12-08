@@ -4,9 +4,23 @@
     box-sizing: border-box;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 620px;
+    width: 100%;
+}
+
 .title {
     font-family: 'lumos';
     text-align: center;
+}
+
+
+
+.game-tally {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .game-container {
