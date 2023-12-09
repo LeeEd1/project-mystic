@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function flipCard(card) {
     card.classList.toggle("flip");
 }
-console.log(flipCard);
+
 
 //shuffle cards **credit fisher-yates method**
 function shuffleArray(array) {
