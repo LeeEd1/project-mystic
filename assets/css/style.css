@@ -44,6 +44,23 @@
     height: 100%;
 }
 
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.card.flip .front {
+    transform: rotateY(180deg);
+}
+
+.card.flip .back {
+    transform: rotateY(0deg);
+}
+
 .front img {
     position: absolute;
     height: 100%;
