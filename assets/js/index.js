@@ -27,8 +27,17 @@ document.addEventListener("DOMContentLoaded", function () {
         const backImg = document.createElement("img");
         backImg.src = `assets/images/${shuffledImages[i]}`;
         backDiv.appendChild(backImg);
+
+        cardDiv.addEventListener("click", function () {
+            flipCard(cardDiv);
+        });
     }
 });
+
+function flipCard(card) {
+    card.classList.toggle("flip");
+}
+console.log(flipCard);
 
 //shuffle cards **credit fisher-yates method**
 function shuffleArray(array) {
@@ -38,4 +47,3 @@ function shuffleArray(array) {
     };
     return array;
 };
-console.log(shuffleArray);
