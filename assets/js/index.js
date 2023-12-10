@@ -35,8 +35,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function flipCard(card) {
-    card.classList.toggle("flip");
-}
+    if (!card.classList.contains("flip")) {
+        card.classList.add("flip");
+
+        const flippedCards = document.querySelectorAll(".card.flip:not(.matched)");
+
+        if (flippedCards.length === 2) {
+            const [firstCard, secondCard] = flippedCards;
+            const firstImg = firstCard.querySelector(".back img").src;
+            const secondImg = secondCard.querySelector(".back img").src;
+
+            if (firstImg === secondImg) {
+                console.log("Match found");
+                flippedCards.forEach(card => card.classList.add("matched"));
+            } else {
+                setTimeout(() => {
+                    console.log("No match");
+                    flippedCards.forEach(card => card.classList.remove("flip"));
+                }, 1000);
+            };
+        };
+    };
+};
 
 
 //shuffle cards **credit fisher-yates method**
