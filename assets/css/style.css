@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(#FFFFFF, #000000);
+}
+
 .container {
     margin: 0 auto;
     max-width: 620px;
