@@ -27,6 +27,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .game-container {
@@ -90,4 +92,5 @@ body {
 
 .social i {
     color: black;
+    font-size: 2rem;
 }
