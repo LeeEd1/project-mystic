@@ -48,17 +48,14 @@ function flipCard(card) {
             const secondImg = secondCard.querySelector(".back img").src;
 
             if (firstImg === secondImg) {
-                console.log("Match found");
                 flippedCards.forEach(card => card.classList.add("matched"));
             } else {
                 setTimeout(() => {
-                    console.log("No match");
                     flippedCards.forEach(card => card.classList.remove("flip"));
                 }, 1000);
             };
             setTimeout(() => {
                 cardClickCount = false;
-                console.log("pause game");
             }, 1000);
         };
     };
