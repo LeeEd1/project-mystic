@@ -1,6 +1,6 @@
 const imageList = ["dobby.jpg", "dumbledore.jpg", "harry.jpg", "hermione.jpg", "lucius.jpg", "luna.jpg", "ron.jpg", "Voldemort.jpg"];
 const shuffledImages = shuffleArray([...imageList, ...imageList]);
-
+let cardClickCount = false;
 
 //create divs for game board +front+back
 
@@ -35,12 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function flipCard(card) {
-    if (!card.classList.contains("flip")) {
+    if (!card.classList.contains("flip") && !cardClickCount) {
         card.classList.add("flip");
 
         const flippedCards = document.querySelectorAll(".card.flip:not(.matched)");
 
         if (flippedCards.length === 2) {
+            cardClickCount = true;
+
             const [firstCard, secondCard] = flippedCards;
             const firstImg = firstCard.querySelector(".back img").src;
             const secondImg = secondCard.querySelector(".back img").src;
@@ -54,6 +56,10 @@ function flipCard(card) {
                     flippedCards.forEach(card => card.classList.remove("flip"));
                 }, 1000);
             };
+            setTimeout(() => {
+                cardClickCount = false;
+                console.log("pause game");
+            }, 1000);
         };
     };
 };
