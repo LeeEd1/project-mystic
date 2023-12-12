@@ -94,3 +94,14 @@ body {
     color: black;
     font-size: 2rem;
 }
+
+@media (max-width: 768px) {
+    .game-container {
+        margin: 25px;
+    }
+
+    .card {
+        height: 100px;
+        width: 100px;
+    }
+}
