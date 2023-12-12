@@ -1,6 +1,7 @@
 const imageList = ["dobby.jpg", "dumbledore.jpg", "harry.jpg", "hermione.jpg", "lucius.jpg", "luna.jpg", "ron.jpg", "Voldemort.jpg"];
 const shuffledImages = shuffleArray([...imageList, ...imageList]);
 let cardClickCount = false;
+let matchesCount = 0;
 
 //create divs for game board +front+back
 
@@ -49,6 +50,10 @@ function flipCard(card) {
 
             if (firstImg === secondImg) {
                 flippedCards.forEach(card => card.classList.add("matched"));
+
+                matchesCount++;
+                document.querySelector(".matches").textContent = matchesCount;
+                console.log(matchesCount);
             } else {
                 setTimeout(() => {
                     flippedCards.forEach(card => card.classList.remove("flip"));
