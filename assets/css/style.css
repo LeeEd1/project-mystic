@@ -96,6 +96,11 @@ body {
 }
 
 @media (max-width: 768px) {
+    .game-tally {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
     .game-container {
         margin: 25px;
     }
