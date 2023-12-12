@@ -101,6 +101,13 @@ body {
     }
 
     .card {
+        height: 125px;
+        width: 125px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
         height: 100px;
         width: 100px;
     }
