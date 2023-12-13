@@ -72,6 +72,11 @@ function resetGame() {
     const gameContainer = document.getElementById("game-container");
     gameContainer.innerHTML = "";
 
+    cardClickCount = false;
+    matchesCount = 0;
+
+    console.log("score reset");
+
     const shuffledImages = shuffleArray([...imageList, ...imageList]);
 
     for (let i = 0; i < 16; i++) {
