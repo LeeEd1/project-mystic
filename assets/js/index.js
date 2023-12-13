@@ -33,6 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
             flipCard(cardDiv);
         });
     }
+
+    const newGame = document.querySelector(".newGame");
+    newGame.addEventListener("click", resetGame);
 });
 
 function flipCard(card) {
@@ -53,7 +56,6 @@ function flipCard(card) {
 
                 matchesCount++;
                 document.querySelector(".matches").textContent = matchesCount;
-                console.log(matchesCount);
             } else {
                 setTimeout(() => {
                     flippedCards.forEach(card => card.classList.remove("flip"));
@@ -65,6 +67,40 @@ function flipCard(card) {
         };
     };
 };
+
+function resetGame() {
+    const gameContainer = document.getElementById("game-container");
+    gameContainer.innerHTML = "";
+
+    const shuffledImages = shuffleArray([...imageList, ...imageList]);
+
+    for (let i = 0; i < 16; i++) {
+        const cardDiv = document.createElement("div");
+        cardDiv.className = "card";
+        gameContainer.appendChild(cardDiv);
+
+        const frontDiv = document.createElement("div");
+        frontDiv.className = "front";
+        cardDiv.appendChild(frontDiv);
+
+        const frontImg = document.createElement("img");
+        frontImg.src = `assets/images/hplogo.jpg`;
+        frontDiv.appendChild(frontImg);
+
+        const backDiv = document.createElement("div");
+        backDiv.className = "back";
+        cardDiv.appendChild(backDiv);
+
+        const backImg = document.createElement("img");
+        backImg.src = `assets/images/${shuffledImages[i]}`;
+        backDiv.appendChild(backImg);
+
+        cardDiv.addEventListener("click", function () {
+            flipCard(cardDiv);
+        });
+    }
+    console.log("reset");
+}
 
 
 //shuffle cards **credit fisher-yates method**
