@@ -75,6 +75,8 @@ function resetGame() {
     cardClickCount = false;
     matchesCount = 0;
 
+    document.querySelector(".matches").textContent = matchesCount;
+
     console.log("score reset");
 
     const shuffledImages = shuffleArray([...imageList, ...imageList]);
