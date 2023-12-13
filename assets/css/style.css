@@ -31,6 +31,12 @@ body {
     padding-right: 10px;
 }
 
+.newgamebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .game-container {
     display: grid;
     grid-template-columns: repeat(4, auto);
