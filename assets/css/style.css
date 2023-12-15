@@ -7,7 +7,7 @@
 body {
     min-height: 100vh;
     margin: 0;
-    background: radial-gradient(#FFFFFF, #000000);
+    background: radial-gradient(#FFFFFF, #48494b);
 }
 
 .container {
@@ -29,6 +29,7 @@ body {
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
+    font-weight: bold;
 }
 
 .newGame {
@@ -36,6 +37,7 @@ body {
     background-color: grey;
     border-radius: 10px;
     border: 1px solid white;
+    font-weight: bold;
 }
 
 .game-container {
