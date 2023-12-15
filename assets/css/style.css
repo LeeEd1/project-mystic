@@ -31,10 +31,11 @@ body {
     padding-right: 10px;
 }
 
-.newgamebtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.newGame {
+    color: black;
+    background-color: grey;
+    border-radius: 10px;
+    border: 1px solid white;
 }
 
 .game-container {
