@@ -7,6 +7,9 @@ let matchesCount = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
     const gameContainer = document.getElementById("game-container");
+    const startGameButton = document.querySelector(".startgame");
+
+    startGameButton.addEventListener("click", startGame);
 
     for (let i = 0; i < 16; i++) {
         const cardDiv = document.createElement("div");
@@ -37,6 +40,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const newGame = document.querySelector(".newGame");
     newGame.addEventListener("click", resetGame);
 });
+
+function startGame() {
+    let timeRemaining = 60;
+
+    const timerInterval = setInterval(function () {
+        timeRemaining--;
+
+        if (timeRemaining <= 0) {
+            document.querySelector(".time-remaining").textContent = 0;
+            console.log("time up");
+            clearInterval(timerInterval);
+        } else {
+            document.querySelector(".time-remaining").textContent = timeRemaining;
+        };
+    }, 1000);
+};
 
 function flipCard(card) {
     if (!card.classList.contains("flip") && !cardClickCount) {
