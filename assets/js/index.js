@@ -2,8 +2,6 @@ const imageList = ["dobby.jpg", "dumbledore.jpg", "harry.jpg", "hermione.jpg", "
 const shuffledImages = shuffleArray([...imageList, ...imageList]);
 let cardClickCount = false;
 let matchesCount = 0;
-let timeRemaining = 60;
-let timerInterval;
 
 //create divs for game board +front+back
 
@@ -34,27 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
         cardDiv.addEventListener("click", function () {
             flipCard(cardDiv);
         });
-    };
+    }
 
     const newGame = document.querySelector(".newGame");
     newGame.addEventListener("click", resetGame);
-
-    startTimer();
 });
-
-function startTimer() {
-    timerInterval = setInterval(function () {
-        timeRemaining--;
-
-        if (timeRemaining <= 0) {
-            document.querySelector(".time-remaining").textContent = timeRemaining;
-            console.log("time Up");
-            clearInterval(timerInterval);
-        } else {
-            document.querySelector(".time-remaining").textContent = timeRemaining;
-        }
-    }, 1000);
-};
 
 function flipCard(card) {
     if (!card.classList.contains("flip") && !cardClickCount) {
@@ -123,10 +105,9 @@ function resetGame() {
         cardDiv.addEventListener("click", function () {
             flipCard(cardDiv);
         });
-    };
-    startTimer();
+    }
     console.log("reset");
-};
+}
 
 
 //shuffle cards **credit fisher-yates method**
