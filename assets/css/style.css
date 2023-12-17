@@ -32,6 +32,14 @@ body {
     font-weight: bold;
 }
 
+.game-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .newGame {
     color: black;
     background-color: grey;
