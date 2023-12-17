@@ -134,8 +134,6 @@ function resetGame() {
         });
     }
     console.log("reset");
-
-    startGame();
 }
 
 
