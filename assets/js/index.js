@@ -1,15 +1,18 @@
 const imageList = ["dobby.jpg", "dumbledore.jpg", "harry.jpg", "hermione.jpg", "lucius.jpg", "luna.jpg", "ron.jpg", "Voldemort.jpg"];
-const shuffledImages = shuffleArray([...imageList, ...imageList]);
+let shuffledImages = shuffleArray([...imageList, ...imageList]);
 let cardClickCount = false;
 let matchesCount = 0;
+let timeInterval;
 
 //create divs for game board +front+back
 
 document.addEventListener("DOMContentLoaded", function () {
     const gameContainer = document.getElementById("game-container");
     const startGameButton = document.querySelector(".startgame");
+    const newGameButton = document.querySelector(".newGame");
 
     startGameButton.addEventListener("click", startGame);
+    newGameButton.addEventListener("click", resetGame);
 
     for (let i = 0; i < 16; i++) {
         const cardDiv = document.createElement("div");
@@ -44,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function startGame() {
     let timeRemaining = 60;
 
-    const timerInterval = setInterval(function () {
+    timerInterval = setInterval(function () {
         timeRemaining--;
 
         if (timeRemaining <= 0) {
@@ -98,7 +101,12 @@ function resetGame() {
 
     console.log("score reset");
 
-    const shuffledImages = shuffleArray([...imageList, ...imageList]);
+    clearInterval(timerInterval);
+
+    const timeRemainder = document.querySelector(".time-remaining");
+    timeRemainder.textContent = 60;
+
+    shuffledImages = shuffleArray([...imageList, ...imageList]);
 
     for (let i = 0; i < 16; i++) {
         const cardDiv = document.createElement("div");
@@ -126,6 +134,8 @@ function resetGame() {
         });
     }
     console.log("reset");
+
+    startGame();
 }
 
 
