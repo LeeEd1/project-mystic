@@ -40,6 +40,14 @@ body {
     padding-right: 10px;
 }
 
+.startgame {
+    color: black;
+    background-color: grey;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
 .newgame {
     color: black;
     background-color: grey;
