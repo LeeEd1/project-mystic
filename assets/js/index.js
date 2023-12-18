@@ -3,6 +3,7 @@ let shuffledImages = shuffleArray([...imageList, ...imageList]);
 let cardClickCount = false;
 let matchesCount = 0;
 let timeInterval;
+let gameStarted = false;
 
 //create divs for game board +front+back
 
@@ -11,7 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const startGameButton = document.querySelector(".startgame");
     const newGameButton = document.querySelector(".newGame");
 
-    startGameButton.addEventListener("click", startGame);
+    startGameButton.addEventListener("click", function () {
+        if (!gameStarted) {
+            console.log("game starting");
+            startGame();
+            gameStarted = true;
+        }
+    });
+
+
     newGameButton.addEventListener("click", resetGame);
 
     for (let i = 0; i < 16; i++) {
