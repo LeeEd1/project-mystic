@@ -10,7 +10,7 @@ let gameStarted = false;
 document.addEventListener("DOMContentLoaded", function () {
     const gameContainer = document.getElementById("game-container");
     const startGameButton = document.querySelector(".startgame");
-    const newGameButton = document.querySelector(".newGame");
+    const newGameButton = document.querySelector(".newgame");
 
     startGameButton.addEventListener("click", function () {
         if (!gameStarted) {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    const newGame = document.querySelector(".newGame");
+    const newGame = document.querySelector(".newgame");
     newGame.addEventListener("click", resetGame);
 });
 
