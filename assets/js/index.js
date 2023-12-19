@@ -63,6 +63,7 @@ function startGame() {
             document.querySelector(".time-remaining").textContent = 0;
             console.log("time up");
             clearInterval(timerInterval);
+            gameStarted = false;
         } else {
             document.querySelector(".time-remaining").textContent = timeRemaining;
         };
@@ -108,9 +109,10 @@ function resetGame() {
 
     document.querySelector(".matches").textContent = matchesCount;
 
-    console.log("score reset");
+    console.log("reset game");
 
     clearInterval(timerInterval);
+    gameStarted = false;
 
     const timeRemainder = document.querySelector(".time-remaining");
     timeRemainder.textContent = 60;
@@ -142,7 +144,7 @@ function resetGame() {
             flipCard(cardDiv);
         });
     }
-    console.log("reset");
+    console.log("game reset");
 }
 
 
