@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     startGameButton.addEventListener("click", function () {
         if (!gameStarted) {
-            console.log("game starting");
             startGame();
             gameStarted = true;
         }
@@ -61,10 +60,10 @@ function startGame() {
 
         if (timeRemaining <= 0) {
             document.querySelector(".time-remaining").textContent = 0;
-
             clearInterval(timerInterval);
-
             gameStarted = false;
+            showGameOver();
+            console.log("game over");
         } else {
             document.querySelector(".time-remaining").textContent = timeRemaining;
         };
@@ -89,6 +88,12 @@ function flipCard(card) {
 
                 matchesCount++;
                 document.querySelector(".matches").textContent = matchesCount;
+
+                if (matchesCount === imageList.length) {
+                    clearInterval(timerInterval);
+                    gameStarted = false;
+                    showCongratulations();
+                }
             } else {
                 setTimeout(() => {
                     flippedCards.forEach(card => card.classList.remove("flip"));
@@ -100,6 +105,7 @@ function flipCard(card) {
         };
     };
 };
+
 
 function resetGame() {
     const gameContainer = document.getElementById("game-container");
@@ -144,6 +150,14 @@ function resetGame() {
         });
     };
 };
+
+function showCongratulations() {
+    window.alert("Your a wizard! All matches found.");
+}
+
+function showGameOver() {
+    window.alert("Avada Kedavra! GAME OVER!");
+}
 
 
 //shuffle cards **credit fisher-yates method**
