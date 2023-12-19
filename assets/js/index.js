@@ -61,8 +61,9 @@ function startGame() {
 
         if (timeRemaining <= 0) {
             document.querySelector(".time-remaining").textContent = 0;
-            console.log("time up");
+
             clearInterval(timerInterval);
+
             gameStarted = false;
         } else {
             document.querySelector(".time-remaining").textContent = timeRemaining;
@@ -109,8 +110,6 @@ function resetGame() {
 
     document.querySelector(".matches").textContent = matchesCount;
 
-    console.log("reset game");
-
     clearInterval(timerInterval);
     gameStarted = false;
 
@@ -143,9 +142,8 @@ function resetGame() {
         cardDiv.addEventListener("click", function () {
             flipCard(cardDiv);
         });
-    }
-    console.log("game reset");
-}
+    };
+};
 
 
 //shuffle cards **credit fisher-yates method**
