@@ -42,18 +42,20 @@ body {
 
 .startgame {
     color: black;
-    background-color: grey;
+    background-color: lightgreen;
     border-radius: 10px;
     border: 1px solid white;
     font-weight: bold;
+    height: 50px;
 }
 
 .newgame {
     color: black;
-    background-color: grey;
+    background-color: indianred;
     border-radius: 10px;
     border: 1px solid white;
     font-weight: bold;
+    height: 50px;
 }
 
 .game-container {
