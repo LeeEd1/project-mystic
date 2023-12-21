@@ -185,3 +185,15 @@ body {
         width: 60px;
     }
 }
+
+@media (max-width: 300px) {
+    .game-tally {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .game-buttons {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
