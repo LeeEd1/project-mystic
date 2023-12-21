@@ -21,6 +21,9 @@ body {
     text-align: center;
 }
 
+.game-buttons {
+    padding-top: 20px;
+}
 
 
 .game-tally {
