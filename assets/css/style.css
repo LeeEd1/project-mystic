@@ -130,7 +130,7 @@ body {
         margin: 25px;
     }
 
-    .game-buttons{
+    .game-buttons {
         padding-left: 60px;
         padding-right: 60px;
     }
@@ -142,6 +142,16 @@ body {
 }
 
 @media (max-width: 576px) {
+    .game-tally {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .game-buttons {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
     .card {
         height: 100px;
         width: 100px;
@@ -160,6 +170,16 @@ body {
 }
 
 @media (max-width: 376px) {
+    .game-tally {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .game-buttons {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .card {
         height: 60px;
         width: 60px;
