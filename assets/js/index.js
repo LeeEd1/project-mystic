@@ -108,48 +108,8 @@ function flipCard(card) {
 
 
 function resetGame() {
-    const gameContainer = document.getElementById("game-container");
-    gameContainer.innerHTML = "";
-
-    cardClickCount = false;
-    matchesCount = 0;
-
-    document.querySelector(".matches").textContent = matchesCount;
-
-    clearInterval(timerInterval);
-    gameStarted = false;
-
-    const timeRemainder = document.querySelector(".time-remaining");
-    timeRemainder.textContent = 60;
-
-    shuffledImages = shuffleArray([...imageList, ...imageList]);
-
-    for (let i = 0; i < 16; i++) {
-        const cardDiv = document.createElement("div");
-        cardDiv.className = "card";
-        gameContainer.appendChild(cardDiv);
-
-        const frontDiv = document.createElement("div");
-        frontDiv.className = "front";
-        cardDiv.appendChild(frontDiv);
-
-        const frontImg = document.createElement("img");
-        frontImg.src = `assets/images/hplogo.jpg`;
-        frontDiv.appendChild(frontImg);
-
-        const backDiv = document.createElement("div");
-        backDiv.className = "back";
-        cardDiv.appendChild(backDiv);
-
-        const backImg = document.createElement("img");
-        backImg.src = `assets/images/${shuffledImages[i]}`;
-        backDiv.appendChild(backImg);
-
-        cardDiv.addEventListener("click", function () {
-            flipCard(cardDiv);
-        });
-    };
-};
+    window.location.reload();
+}
 
 function showCongratulations() {
     window.alert("Your a wizard! All matches found.");
