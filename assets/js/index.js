@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const frontImg = document.createElement("img");
         frontImg.src = `assets/images/hplogo.jpg`;
+        frontImg.alt = "Back of card";
         frontDiv.appendChild(frontImg);
 
         const backDiv = document.createElement("div");
@@ -44,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const backImg = document.createElement("img");
         backImg.src = `assets/images/${shuffledImages[i]}`;
+        altForImg = shuffledImages[i].substring(0, shuffledImages[i].length - 4);
+        backImg.alt = altForImg + ", the character from harry potter";
         backDiv.appendChild(backImg);
 
         cardDiv.addEventListener("click", function () {
