@@ -43,6 +43,7 @@ body {
     padding-right: 10px;
 }
 
+
 .startgame {
     color: black;
     background-color: lightgreen;
@@ -59,6 +60,12 @@ body {
     border: 1px solid white;
     font-weight: bold;
     height: 50px;
+}
+
+.open {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .game-container {
