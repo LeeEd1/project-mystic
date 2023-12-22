@@ -12,8 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const startGameButton = document.querySelector(".startgame");
     const newGameButton = document.querySelector(".newgame");
 
+    gameContainer.style.visibility = "hidden";
+
     startGameButton.addEventListener("click", function () {
         if (!gameStarted) {
+            gameContainer.style.visibility = "visible";
             startGame();
             gameStarted = true;
         }
