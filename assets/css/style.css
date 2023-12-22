@@ -62,11 +62,7 @@ body {
     height: 50px;
 }
 
-.open {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
+
 
 .game-container {
     display: grid;
