@@ -1,13 +1,11 @@
 function openModal() {
     const modalContainer = document.querySelector(".modal-container");
     modalContainer.style.display = "block";
-    console.log("Modal opened");
 };
 
 function closeModal() {
     const modalContainer = document.querySelector(".modal-container");
     modalContainer.style.display = "none";
-    console.log("Modal closed");
 };
 
 function showCongratulations() {
@@ -16,16 +14,15 @@ function showCongratulations() {
 
     const matchTimeFigure = congratulationsModal.querySelector(".match-time");
     matchTimeFigure.innerHTML = `<strong>${matchTime}</strong>`;
-    console.log("Match time");
+
 
     congratulationsModal.style.display = "block";
-    console.log("modal congrats");
+
 };
 
 function showGameOver() {
     const gameOverModal = document.getElementById("game-over-modal");
     gameOverModal.style.display = "block";
-    console.log("modal game over");
 };
 
 const openButton = document.querySelector(".open");

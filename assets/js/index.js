@@ -73,7 +73,6 @@ function startGame() {
             clearInterval(timerInterval);
             gameStarted = false;
             showGameOver();
-            console.log("game over");
         } else {
             document.querySelector(".time-remaining").textContent = timeRemaining;
         };
