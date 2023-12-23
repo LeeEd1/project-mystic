@@ -121,14 +121,6 @@ function resetGame() {
     window.location.reload();
 }
 
-function showCongratulations() {
-    window.alert("Your a wizard! All matches found.");
-}
-
-function showGameOver() {
-    window.alert("Avada Kedavra! GAME OVER!");
-}
-
 
 //shuffle cards **credit fisher-yates method**
 function shuffleArray(array) {
