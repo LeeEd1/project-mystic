@@ -9,8 +9,6 @@ body {
     min-height: 100vh;
     margin: 0;
     background: radial-gradient(#FFFFFF, #48494b);
-    font-family: 'MedievalSharp', cursive;
-    font-weight: bold;
 }
 
 .container {
