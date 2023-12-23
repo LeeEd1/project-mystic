@@ -10,6 +10,18 @@ function closeModal() {
     console.log("Modal closed");
 };
 
+function showCongratulations() {
+    const congratulationsModal = document.getElementById("congratulations-modal");
+    congratulationsModal.style.display = "block";
+    console.log("modal congrats");
+};
+
+function showGameOver() {
+    const gameOverModal = document.getElementById("game-over-modal");
+    gameOverModal.style.display = "block";
+    console.log("modal game over");
+};
+
 const openButton = document.querySelector(".open");
 const closeButton = document.querySelector(".close");
 
