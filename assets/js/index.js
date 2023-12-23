@@ -5,6 +5,7 @@ let matchesCount = 0;
 let timeInterval;
 let gameStarted = false;
 
+
 //create divs for game board +front+back
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -60,6 +61,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function startGame() {
     let timeRemaining = 60;
+
+    document.querySelector(".open").style.display = "none";
+    document.querySelector(".modal-container").style.display = "none";
 
     timerInterval = setInterval(function () {
         timeRemaining--;
