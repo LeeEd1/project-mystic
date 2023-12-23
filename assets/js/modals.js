@@ -12,6 +12,12 @@ function closeModal() {
 
 function showCongratulations() {
     const congratulationsModal = document.getElementById("congratulations-modal");
+    const matchTime = 60 - document.querySelector(".time-remaining").textContent;
+
+    const matchTimeFigure = congratulationsModal.querySelector(".match-time");
+    matchTimeFigure.innerHTML = `<strong>${matchTime}</strong>`;
+    console.log("Match time");
+
     congratulationsModal.style.display = "block";
     console.log("modal congrats");
 };
