@@ -46,12 +46,16 @@ body {
 
 
 .startgame {
-    color: black;
-    background-color: lightgreen;
+    color: rgb(100, 30, 30);
+    background-color: rgb(195, 154, 28, 0.7);
     border-radius: 10px;
-    border: 1px solid white;
+    border: 1px solid rgb(100, 30, 30);
     font-weight: bold;
     height: 50px;
+}
+
+.startgame:hover {
+    background-color: rgb(195, 154, 28, 1);
 }
 
 .newgame {
@@ -75,10 +79,20 @@ body {
 }
 
 .open {
+    height: 50px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
+    border-radius: 10px;
+    background-color: rgb(211, 166, 37, 0.7);
+    font-weight: bold;
+    border: 2px solid rgb(100, 30, 30);
+    color: rgb(100, 30, 30);
+}
+
+.open:hover {
+    background-color: rgb(211, 166, 37, 1);
 }
 
 .modal-container {
@@ -90,12 +104,13 @@ body {
 }
 
 .modal {
+    font-weight: bold;
+    color: rgb(100, 30, 30);
     width: 200px;
     text-align: center;
-    background-color: white;
+    background-color: rgb(195, 154, 28);
     border-radius: 10px;
     padding: 5px;
-    border: 2px solid black;
 }
 
 .card {
