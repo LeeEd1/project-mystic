@@ -1,3 +1,10 @@
+# Mystic Match
+![Site accross devices](assets/documentation/responsive.png)
+Mystic Match is an enchanting card matching adventure where you will unveil the cards in a quest to discover all the magical pairs. Beware, if you dont successfully match them all you might encounter the ominous spell AVADA KEDAVRA!
+
+
+
+
 ## UX:
 
 ### Site purose:
