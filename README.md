@@ -198,3 +198,10 @@ I do not hold any rights to these images and they are only used for educational 
 - [Lucius](https://villains.fandom.com/wiki/Lucius_Malfoy?file=Lucius+Malfoy.jpg)
 - [Dobby](https://harrypotter.fandom.com/wiki/Dobby?file=Dobby.jpg)
 - [Luna](https://www.wizardingworld.com/features/seven-reasons-to-love-luna-lovegood)
+
+### People
+
+- I would like to thank my mentor [Spencer barriball](https://github.com/5pence) for His support throughout my first and second project has been immense and greatly appreciated.
+- I would like to thank my friend [Nicholas Mobey](https://www.linkedin.com/in/nicolas-mobey-79149049) for His support constantly throughout my projects pushing me on when the going gets tough and guiding me where it's neeeded.
+- I would like to thank the [CI Tutor support](https://learn.codeinstitute.net/ci_support/level5diplomainwebappdevelopment/tutor) for their ongoing support throughout my projects.
+- I would like to also take the time to thank [Code Institute] as a whole, I have faced a very difficult few months in my home life and recieved nothing but support from CI and for that I am very greatful.
