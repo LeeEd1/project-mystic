@@ -70,11 +70,31 @@ The images used in the website are sourced from various locations which are all 
 
 ### Landing Page
 
-For the landing page I chose to hide the game board and have a button the user can click which is linked to a pop up modal  with instructions of how to play. You can view the landing page [Here](assets/documentation/landing-page.PNG). The modal pop up can be viewed [Here](assets/documentation/modal-instructions.PNG).
+For the landing page I chose to hide the game board and have a button the user can click which is linked to a pop up modal  with instructions of how to play. Here is the landing page along with the pop up modal.
+
+![Here](assets/documentation/landing-page.PNG)
+
 
 ### Game board
 
-Once the user clicks start game the game board is revealed and the timer starts the countdown. You can view the game board [here](assets/documentation/game-board.PNG)
+Once the user clicks start game the game board is revealed and the timer starts the countdown. 
+![here](assets/documentation/game-board.PNG)
+
+### Modals
+
+![Here](assets/documentation/modal-instructions.PNG)
+![Here](assets/documentation/win-modal.PNG) 
+![Here](assets/documentation/game-over.PNG)
+
+Above are the 3 modals the player will see in their journey through the game. The first is the instructions modal which pops up when the player clicks How to play, The second is the win modal which pops up if the player is successful, The third is the game over modal.
+
+### Footer
+
+I have also added social media links along with youtube for more viewing pleasure.
+
+## Testing:
+
+During testing I found that the start game button was not working after  new game was clicked, after a while of testing and checking the console it was pointed out to me by my good friend nik that the game state wasn't being logged.
 
 ## Media
 
