@@ -2,7 +2,7 @@ const imageList = ["dobby.jpg", "dumbledore.jpg", "harry.jpg", "hermione.jpg", "
 let shuffledImages = shuffleArray([...imageList, ...imageList]);
 let cardClickCount = false;
 let matchesCount = 0;
-let timeInterval;
+let timerInterval;
 let gameStarted = false;
 
 
