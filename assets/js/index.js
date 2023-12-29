@@ -75,9 +75,9 @@ function startGame() {
             showGameOver();
         } else {
             document.querySelector(".time-remaining").textContent = timeRemaining;
-        };
+        }
     }, 1000);
-};
+}
 
 function flipCard(card) {
     if (!card.classList.contains("flip") && !cardClickCount) {
