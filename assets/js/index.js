@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const backImg = document.createElement("img");
         backImg.src = `assets/images/${shuffledImages[i]}`;
-        altForImg = shuffledImages[i].substring(0, shuffledImages[i].length - 4);
+        const altForImg = shuffledImages[i].substring(0, shuffledImages[i].length - 4);
         backImg.alt = altForImg + ", the character from harry potter";
         backDiv.appendChild(backImg);
 
@@ -107,13 +107,13 @@ function flipCard(card) {
                 setTimeout(() => {
                     flippedCards.forEach(card => card.classList.remove("flip"));
                 }, 1000);
-            };
+            }
             setTimeout(() => {
                 cardClickCount = false;
             }, 1000);
-        };
-    };
-};
+        }
+    }
+}
 
 
 function resetGame() {
@@ -126,6 +126,6 @@ function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
-    };
+    }
     return array;
-};
+}
