@@ -1,5 +1,7 @@
+/*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
+/*global*/
 * {
     box-sizing: border-box;
 }
@@ -10,6 +12,7 @@ body {
     background: radial-gradient(#FFFFFF, #48494b);
 }
 
+/*Start of game buttons and tally styling*/
 .container {
     margin: 0 auto;
     max-width: 620px;
@@ -71,8 +74,7 @@ body {
     background-color: rgb(100, 30, 30, 1);
 }
 
-
-
+/*Start of game container styling*/
 .game-container {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -165,6 +167,7 @@ body {
     border-radius: 10%;
 }
 
+/*Social icons*/
 .social {
     text-align: center;
 }
@@ -174,6 +177,7 @@ body {
     font-size: 2rem;
 }
 
+/*Media queries*/
 @media (max-width: 768px) {
     .game-tally {
         padding-left: 60px;
