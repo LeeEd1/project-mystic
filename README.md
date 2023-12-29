@@ -100,9 +100,27 @@ During testing I found that the start game button was not working after  new gam
 I also had an issue with my radial gradient looping through my page instead of creating the look from light grey on the outside to white on the inside, after a few google searches I found that the VH wasnt set creating the radial gradient to loop only the length of my title. Below is the comment I found to fix this.
 ![gradientfix](assets/documentation/gradientfix.PNG)
 
-While doing my lighthouse reports I found that my images did not have alt's. to fix this I added alt's into my function that adds the images however it was also adding .jpg, I turned to stack overflow to help me with this issue where I was able to add a line of code that sliced the .jpg off. You can view the thread [Here](https://stackoverflow.com/questions/952924/how-do-i-chop-slice-trim-off-last-character-in-string-using-javascript).
+While doing my lighthouse reports I found that my images did not have alt's. I added the alts using the file names however it was also adding .jpg, I turned to stack overflow to help me with this issue, where I was able to add a line of code that sliced the .jpg off. You can view the thread [Here](https://stackoverflow.com/questions/952924/how-do-i-chop-slice-trim-off-last-character-in-string-using-javascript).
 By adding the altForImg + backImg.alt I was able to create the desired alt.
 ![Alt-fix](assets/documentation/alt-fix.PNG)
+
+### Manual testing
+
+Below is a table of manual testing carried out by myself.
+
+| Feauture tested | Action | Outcome | Result |
+|-----------------|--------|---------|--------|
+|How to play BTN | Left click | Pop up modal|Successfully opens modal|
+|Modal close BTN |Left click |Close Modal|Successfully close modal|
+|Start game BTN | Left click |Start's Game| Successfully Start's game|
+|New game BTN  | Left click | Clear's game| Successfully Clear's game |
+|Social links | Left click | Direct to desired link| Successfully loads link|
+
+### Validator testing 
+
+- HTML files passed through w3c with no issues found, As shown below.
+
+
 
 ## Media
 
