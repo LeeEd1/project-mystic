@@ -108,13 +108,13 @@ By adding the altForImg + backImg.alt I was able to create the desired alt.
 
 Below is a table of manual testing carried out by myself.
 
-| Feauture tested | Action | Outcome | Result |
-|-----------------|--------|---------|--------|
-|How to play BTN | Left click | Pop up modal|Successfully opens modal|
-|Modal close BTN |Left click |Close Modal|Successfully close modal|
-|Start game BTN | Left click |Start's Game| Successfully Start's game|
-|New game BTN  | Left click | Clear's game| Successfully Clear's game |
-|Social links | Left click | Direct to desired link| Successfully loads link|
+| Feauture tested | Action     | Outcome               | Result                    |
+|-----------------|------------|-----------------------|---------------------------|
+|How to play BTN  | Left click | Pop up modal          |Successfully opens modal   |
+|Modal close BTN  | Left click | Close Modal           |Successfully close modal   |
+|Start game BTN   | Left click | Start's Game          | Successfully Start's game |
+|New game BTN     | Left click | Clear's game          | Successfully Clear's game |
+|Social links     | Left click | Direct to desired link| Successfully loads link   |
 
 ### Validator testing 
 
@@ -131,10 +131,10 @@ Below is a table of manual testing carried out by myself.
 ### Lighthouse reports
 
 
-| location | Result |
-|-----|------|
-| Desktop | ![Desktop](assets/documentation/lighthouse-desk.PNG) |
-| Mobile  | ![Mobile](assets/documentation/lighthouse-mob.PNG)  |
+| location | Result                                               |
+|----------|------------------------------------------------------|
+| Desktop  | ![Desktop](assets/documentation/lighthouse-desk.PNG) |
+| Mobile   | ![Mobile](assets/documentation/lighthouse-mob.PNG)   |
 
 The page has a full house on Desktop and nearly full on Mobile. 
 
@@ -161,20 +161,40 @@ After my final testing phases, There are no known bugs to date.
 
 ### Frameworks, libraries & programs used.
 
+- Photo shop - For the resizing of my images.
 - Font Awesome - Too add icons to the page.
 - Code Anywhere - Too create my project
 - Git hub - To store my repository
 - Am I Responsive - To view site on all devices
 - Google fonts - For the fonts MedievalSharp and Gothic
 - Balsamiq - For my wireframes
+- Snipping tool - for all my snippets for readme.
+
+## Deployment
+
+The site was deployed through Github pages, The steps to deploy are as follows:
+
+- In the git hub repository navigate to the settings tab.
+- Under the Code and Automation section, select Pages.
+- From the sourcedrop-down menu, select the MAIN branch. Then select Save.
+- Once the main branch has been selected , the page with autimatically be refreshed with a detailed ribbon to diplay the deployment was successful.
+- The live site can be found [here]()
+
+### Content
+
+- [Color Hex](https://www.color-hex.com/color-palette/64222) For my color choices.
+- [Font Awesome](https://fontawesome.com/) For my icons.
+- [Google fonts](https://fonts.google.com/) For my fonts.
 
 ## Media
 
+I do not hold any rights to these images and they are only used for educational purposes.
 
-- [dumbledore](https://movie-heroes-and-villains.fandom.com/wiki/Albus_Dumbledore)
-- [voldemort](https://movie-heroes-and-villains.fandom.com/wiki/Lord_Voldemort?file=Voldemort.jpg)
-- [harry](https://neoencyclopedia.fandom.com/wiki/Harry_Potter_(character)?file=HarryPotter5poster.jpg)
-- [ron](https://neoencyclopedia.fandom.com/wiki/Ron_Weasley?file=Ron_Weasley_poster.jpg)
-- [hermoine](https://neoencyclopedia.fandom.com/wiki/Hermione_Granger?file=Hermione_Granger_poster.jpg)
-- [lucius](https://villains.fandom.com/wiki/Lucius_Malfoy?file=Lucius+Malfoy.jpg)
-- [dobby](https://harrypotter.fandom.com/wiki/Dobby?file=Dobby.jpg)
+- [Dumbledore](https://movie-heroes-and-villains.fandom.com/wiki/Albus_Dumbledore)
+- [Voldemort](https://movie-heroes-and-villains.fandom.com/wiki/Lord_Voldemort?file=Voldemort.jpg)
+- [Harry](https://neoencyclopedia.fandom.com/wiki/Harry_Potter_(character)?file=HarryPotter5poster.jpg)
+- [Ron](https://neoencyclopedia.fandom.com/wiki/Ron_Weasley?file=Ron_Weasley_poster.jpg)
+- [Hermoine](https://neoencyclopedia.fandom.com/wiki/Hermione_Granger?file=Hermione_Granger_poster.jpg)
+- [Lucius](https://villains.fandom.com/wiki/Lucius_Malfoy?file=Lucius+Malfoy.jpg)
+- [Dobby](https://harrypotter.fandom.com/wiki/Dobby?file=Dobby.jpg)
+- [Luna](https://www.wizardingworld.com/features/seven-reasons-to-love-luna-lovegood)
