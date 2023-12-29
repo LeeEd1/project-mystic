@@ -119,10 +119,57 @@ Below is a table of manual testing carried out by myself.
 ### Validator testing 
 
 - HTML files passed through w3c with no issues found, As shown below.
+![HTMLw3c](assets/documentation/html-check.PNG)
+
+- Css files passed through w3c with 1 issue found which was a link to fontawesome, this has been corrected as shown below.
+![Csserror](assets/documentation/error-css.PNG)
+![Csscheck](assets/documentation/css-check.PNG)
+
+- I used Js hint to check my JavaScript code, no errors as shown below. I did however remove all unnecassary semi colon's as it suggested and corrected a typo in my global variable.
+![JSHint](assets/documentation/js-hint.PNG)
+
+### Lighthouse reports
 
 
+| location | Result |
+|-----|------|
+| Desktop | ![Desktop](assets/documentation/lighthouse-desk.PNG) |
+| Mobile  | ![Mobile](assets/documentation/lighthouse-mob.PNG)  |
+
+The page has a full house on Desktop and nearly full on Mobile. 
+
+### Browsers & devices tested
+
+- I have tested the sie on Chrome, FireFox, Edge & safari with no issues.
+- I tested the site accross multiple device platforms ranging from my Desktop pc to a galaxy fold (Smallest screensize availabe) with no issues or layout errors found.
+  
+### Responsiveness
+
+While working on this game, I underestimated the complexity of the task. It was only midway through the project that I began to regret my decision not to utilize bootstrap and Jquery. Although I successfully ensured the game's functionality accross various devices, I now realise that opting for libraries like Bootstrap and Jquery could have allowed me to implement a more intricate and sophisticated game.
+
+### Bugs
+
+After my final testing phases, There are no known bugs to date.
+
+## Technologies used:
+
+### languages
+
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+### Frameworks, libraries & programs used.
+
+- Font Awesome - Too add icons to the page.
+- Code Anywhere - Too create my project
+- Git hub - To store my repository
+- Am I Responsive - To view site on all devices
+- Google fonts - For the fonts MedievalSharp and Gothic
+- Balsamiq - For my wireframes
 
 ## Media
+
 
 - [dumbledore](https://movie-heroes-and-villains.fandom.com/wiki/Albus_Dumbledore)
 - [voldemort](https://movie-heroes-and-villains.fandom.com/wiki/Lord_Voldemort?file=Voldemort.jpg)
