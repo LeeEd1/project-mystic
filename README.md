@@ -97,6 +97,13 @@ I have also added social media links along with youtube for more viewing pleasur
 During testing I found that the start game button was not working after  new game was clicked, after a while of testing and checking the console it was pointed out to me by my good friend nik that the game state wasn't being logged. So I added a global variable that toggles when the game is started.
 ![gameStarted](assets/documentation/game-started.PNG)
 
+I also had an issue with my radial gradient looping through my page instead of creating the look from light grey on the outside to white on the inside, after a few google searches I found that the VH wasnt set creating the radial gradient to loop only the length of my title. Below is the comment I found to fix this.
+![gradientfix](assets/documentation/gradientfix.PNG)
+
+While doing my lighthouse reports I found that my images did not have alt's. to fix this I added alt's into my function that adds the images however it was also adding .jpg, I turned to stack overflow to help me with this issue where I was able to add a line of code that sliced the .jpg off. You can view the thread [Here](https://stackoverflow.com/questions/952924/how-do-i-chop-slice-trim-off-last-character-in-string-using-javascript).
+By adding the altForImg + backImg.alt I was able to create the desired alt.
+![Alt-fix](assets/documentation/alt-fix.PNG)
+
 ## Media
 
 - [dumbledore](https://movie-heroes-and-villains.fandom.com/wiki/Albus_Dumbledore)
