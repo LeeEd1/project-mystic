@@ -94,7 +94,8 @@ I have also added social media links along with youtube for more viewing pleasur
 
 ## Testing:
 
-During testing I found that the start game button was not working after  new game was clicked, after a while of testing and checking the console it was pointed out to me by my good friend nik that the game state wasn't being logged.
+During testing I found that the start game button was not working after  new game was clicked, after a while of testing and checking the console it was pointed out to me by my good friend nik that the game state wasn't being logged. So I added a global variable that toggles when the game is started.
+![gameStarted](assets/documentation/game-started.PNG)
 
 ## Media
 
