@@ -1,12 +1,12 @@
 function openModal() {
     const modalContainer = document.querySelector(".modal-container");
     modalContainer.style.display = "block";
-};
+}
 
 function closeModal() {
     const modalContainer = document.querySelector(".modal-container");
     modalContainer.style.display = "none";
-};
+}
 
 function showCongratulations() {
     const congratulationsModal = document.getElementById("congratulations-modal");
@@ -18,12 +18,12 @@ function showCongratulations() {
 
     congratulationsModal.style.display = "block";
 
-};
+}
 
 function showGameOver() {
     const gameOverModal = document.getElementById("game-over-modal");
     gameOverModal.style.display = "block";
-};
+}
 
 const openButton = document.querySelector(".open");
 const closeButton = document.querySelector(".close");
