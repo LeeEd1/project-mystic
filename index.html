@@ -15,18 +15,22 @@
     <header></header>
     <main>
       <h1 class="title">Mystic Match</h1>
+      <!--Container for buttons-->
       <div class="container">
+        <!--Time & Matches-->
         <div class="game-tally">
           <div class="time">Time: <span class="time-remaining">60</span></div>
           <div class="match">Matches: <span class="matches">0</span></div>
         </div>
+        <!--Game buttons-->
         <div class="game-buttons">
           <button class="startgame">Start Game</button>
           <button class="newgame">New Game</button>
         </div>
       </div>
-
+      <!--Game container **generated through JS**-->
       <div class="game-container" id="game-container"></div>
+      <!--How to play button and modal-->
       <button class="open">How to Play!</button>
       <div class="modal-container">
         <div class="modal">
@@ -39,6 +43,7 @@
           <button class="close">X</button>
         </div>
       </div>
+      <!--Win modal-->
       <div class="modal-container" id="congratulations-modal">
         <div class="modal">
           <p>
@@ -47,12 +52,14 @@
           </p>
         </div>
       </div>
+      <!--Game over modal-->
       <div class="modal-container" id="game-over-modal">
         <div class="modal">
           <p>AVADA KEDAVARA! game over!</p>
         </div>
       </div>
     </main>
+    <!--Start of footer social icons-->
     <footer class="social">
       <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"
         ><i class="fa-brands fa-square-facebook"></i
@@ -67,6 +74,7 @@
         ><i class="fa-brands fa-square-youtube"></i
       ></a>
     </footer>
+    <!--scripts-->
     <script src="assets/js/modals.js"></script>
     <script src="assets/js/index.js"></script>
     <script
