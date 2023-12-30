@@ -1,5 +1,6 @@
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
 
 /*global*/
 * {
@@ -10,6 +11,7 @@ body {
     min-height: 100vh;
     margin: 0;
     background: radial-gradient(#FFFFFF, #48494b);
+    font-family: 'Gothic A1', sans-serif;
 }
 
 /*Start of game buttons and tally styling*/
@@ -20,7 +22,7 @@ body {
 }
 
 .title {
-    font-family: 'MedievalSharp';
+    font-family: 'MedievalSharp', sans-serif;
     font-size: 60px;
     text-align: center;
 }
