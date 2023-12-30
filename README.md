@@ -52,7 +52,7 @@ Above is the mobile wireframes showing each stage the user will see.
 
 ### Typography
 
-MedievalSharp was selected for the heading of my page with gothic selected for the rest. All fonts taken from googlefonts.
+MedievalSharp was selected for the heading of my page with gothic selected for the rest. All fonts obtained from googlefonts.
 
 ### Color scheme
 
@@ -73,6 +73,7 @@ The images used in the website are sourced from various locations which are all 
 For the landing page I chose to hide the game board and have a button the user can click which is linked to a pop up modal  with instructions of how to play. Here is the landing page along with the pop up modal.
 
 ![Here](assets/documentation/landing-page.PNG)
+![Here](assets/documentation/modal-instructions.PNG)
 
 
 ### Game board
@@ -86,7 +87,7 @@ Once the user clicks start game the game board is revealed and the timer starts 
 ![Here](assets/documentation/win-modal.PNG) 
 ![Here](assets/documentation/game-over.PNG)
 
-Above are the 3 modals the player will see in their journey through the game. The first is the instructions modal which pops up when the player clicks How to play, The second is the win modal which pops up if the player is successful, The third is the game over modal.
+Above are 3 modals the player will see in their journey through the game. The first is the instructions modal which pops up when the player clicks How to play, The second is the win modal which pops up if the player is successful, The third is the game over modal.
 
 ### Footer
 
