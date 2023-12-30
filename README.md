@@ -199,6 +199,8 @@ I do not hold any rights to these images and they are only used for educational 
 - [Lucius](https://villains.fandom.com/wiki/Lucius_Malfoy?file=Lucius+Malfoy.jpg)
 - [Dobby](https://harrypotter.fandom.com/wiki/Dobby?file=Dobby.jpg)
 - [Luna](https://www.wizardingworld.com/features/seven-reasons-to-love-luna-lovegood)
+- [Favicon](https://www.pinterest.co.uk/pin/481955597626287532/)
+- [Hp logo](https://www.deviantart.com/sprntrlfan-livvi/art/Harry-Potter-Logo-163055561)
 
 ### People
 
