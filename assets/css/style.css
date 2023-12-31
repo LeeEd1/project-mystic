@@ -84,7 +84,6 @@ body {
     margin: 50px;
     justify-content: center;
     perspective: 1000px;
-    cursor: pointer;
 }
 
 .open {
@@ -180,6 +179,12 @@ body {
 }
 
 /*Media queries*/
+@media screen and (min-width: 1025px) {
+    .game-container {
+        cursor: pointer;
+    }
+}
+
 @media (max-width: 768px) {
     .game-tally {
         padding-left: 60px;
