@@ -122,6 +122,12 @@ body {
     border: 2px solid rgb(100, 30, 30);
 }
 
+.close {
+    background-color: rgb(100, 30, 30);
+    color: rgb(195, 154, 28);
+    border: 2px solid rgb(195, 154, 28);
+}
+
 .card {
     position: relative;
     height: 150px;
