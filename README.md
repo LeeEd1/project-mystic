@@ -2,6 +2,7 @@
 
 ![Site accross devices](assets/documentation/responsive.png)
 Mystic Match is an enchanting card matching adventure where you will unveil the cards in a quest to discover all the magical pairs. Beware, if you dont successfully match them all you might encounter the ominous spell AVADA KEDAVRA!
+The site is live and can be viewed [here](https://leeed1.github.io/project-mystic/)
 
 ## UX:
 
@@ -32,6 +33,7 @@ To be engaged upon arrival of the site and to have fun along the way.
 ### Future user goals
 
 - Difficulty levels for the user to suit their needs
+- A league table with fastest times.
 - Another page for more information on the characters.
 
 ## Design:
@@ -105,14 +107,17 @@ While doing my lighthouse reports I found that my images did not have alt's. I a
 By adding the altForImg + backImg.alt I was able to create the desired alt.
 ![Alt-fix](assets/documentation/alt-fix.PNG)
 
+In my last testing phases I sent the live link to my mobile and noticed that the whole game board was flashing when clicked, after going into dev tools and having a play around I noticed that it was my cursor style rule causing the issue. To fix this I added a media query for screen sizes above 1025px to ensure pointer is only on larger screens typically with a mouse.
+![Game container fix](assets/documentation/gc-fix.png)
+
 ### Manual testing
 
 Below is a table of manual testing carried out by myself.
 
 | Feauture tested | Action     | Outcome               | Result                    |
 |-----------------|------------|-----------------------|---------------------------|
-|How to play BTN  | Left click | Pop up modal          |Successfully opens modal   |
-|Modal close BTN  | Left click | Close Modal           |Successfully close modal   |
+|How to play BTN  | Left click | Pop up modal          | Successfully opens modal  |
+|Modal close BTN  | Left click | Close Modal           | Successfully close modal  |
 |Start game BTN   | Left click | Start's Game          | Successfully Start's game |
 |New game BTN     | Left click | Clear's game          | Successfully Clear's game |
 |Social links     | Left click | Direct to desired link| Successfully loads link   |
@@ -141,7 +146,7 @@ The page has a full house on Desktop and nearly full on Mobile.
 
 ### Browsers & devices tested
 
-- I have tested the sie on Chrome, FireFox, Edge & safari with no issues.
+- I have tested the site on Chrome, FireFox, Edge & safari with no issues.
 - I tested the site accross multiple device platforms ranging from my Desktop pc to a galaxy fold (Smallest screensize availabe) with no issues or layout errors found.
   
 ### Responsiveness
@@ -179,7 +184,7 @@ The site was deployed through Github pages, The steps to deploy are as follows:
 - Under the Code and Automation section, select Pages.
 - From the sourcedrop-down menu, select the MAIN branch. Then select Save.
 - Once the main branch has been selected , the page with autimatically be refreshed with a detailed ribbon to diplay the deployment was successful.
-- The live site can be found [here]()
+- The live site can be found [here](https://leeed1.github.io/project-mystic/)
 
 ### Content
 
