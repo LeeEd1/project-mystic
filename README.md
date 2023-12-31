@@ -7,7 +7,7 @@ Mystic Match is an enchanting card matching adventure where you will unveil the 
 
 ### Site purose
 
-The site purpose is to engage anyone into the game, more so if your a HP fan but anyone can get involved. The idea behind the game is to match the cards as fast as you can in the given time frame and if you fail you get muggled.
+The website aims to captivate players especially harry potter enthusiasts, although it welcomes everyone. The game concept ivolves swiftly matching cards within a set time limit and failing results in being muggled.
 
 ### Site goal
 
@@ -15,7 +15,7 @@ The site goal is to engage users into the wizardry world and along the way gain 
 
 ### Audience
 
-I hope people of all ages, from 5 to 100 can discover the magical and enchanting journey that Harry Potter offers. My goal is to raise awareness about its universal appeal and recognition across generations.
+I hope people of all ages can discover the magical and enchanting journey that Harry Potter offers. My goal is to raise awareness about its universal appeal and recognition across generations. Ideal users aged 5 to 40.
 
 ### Communication
 
@@ -52,7 +52,7 @@ Above is the mobile wireframes showing each stage the user will see.
 
 ### Typography
 
-MedievalSharp was selected for the heading of my page with gothic selected for the rest. All fonts obtained from googlefonts.
+MedievalSharp was selected for the heading of my page with gothic selected for the body of my page. All fonts obtained from googlefonts.
 
 ### Color scheme
 
